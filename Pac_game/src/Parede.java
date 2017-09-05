@@ -1,0 +1,18 @@
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Rectangle;
+
+
+public class Parede extends Rectangle{
+    
+    private static final long serialVersionUID = 1L;
+    
+    public Parede(int x, int y){
+        setBounds(x,y,32,32);
+    }
+    
+    public void desenha(Graphics g){
+        g.setColor(new Color(33, 0, 127));
+        g.fillRect(x, y, width, height);
+    }
+}
